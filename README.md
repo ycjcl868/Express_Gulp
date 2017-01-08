@@ -2,7 +2,7 @@
 
 > 原来用的`React`+`Webpack`时，体验到那种同步压缩修改的快感。这次使用`Express`时，也想达到那种效果，一番折腾后，于是有了下图，项目地址：[https://github.com/ycjcl868/Express_Gulp](https://github.com/ycjcl868/Express_Gulp)
 
-![](http://ycjcl.cc/content/images/2017/01/2.gif)
+![](./2.gif)
 
 ### 目的
 我使用`Express`+`Ejs`+`Less`开发，想开发时对所有资源进行`压缩`并`同步`到浏览器端，Google搜索一遍，都不是太符合我的项目要求。于是看着`Gulp文档`结合`npmjs.com`终于折腾完毕。
