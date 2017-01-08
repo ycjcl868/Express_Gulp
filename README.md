@@ -39,7 +39,7 @@
 
 #### package.json文件内容：
 
-```js
+```json
 {
   "name": "voteapp",
   "version": "1.0.0",
