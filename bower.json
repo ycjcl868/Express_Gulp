@@ -1,0 +1,23 @@
+{
+  "name": "voteapp",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "信鑫-King <45808948@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./dist/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "weui": "^1.1.0",
+    "vue": "^2.1.8",
+    "zepto": "^1.2.0"
+  }
+}
