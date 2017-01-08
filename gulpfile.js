@@ -8,7 +8,6 @@ var nodemon = require('gulp-nodemon');
 var cache = require('gulp-cache');
 
 var uglify = require('gulp-uglify');
-var pump = require('pump');
 var htmlmin = require('gulp-htmlmin');
 var imagemin = require('gulp-imagemin')
 
@@ -39,14 +38,10 @@ gulp.task('less', function () {
 
 
 // 压缩js
-gulp.task('js', function (cb) {
-  pump([
-        gulp.src('public/js/*.js'),
-        uglify(),
-        gulp.dest('/dist/js/')
-    ],
-    cb
-  );
+gulp.task('js', function () {
+    return gulp.src('public/js/**/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js/'))
 });
 
 
