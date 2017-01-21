@@ -29,7 +29,11 @@
     "gulp-watch": "^4.3.11"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"forever start bin/www",
+    "restart":"forever restart bin/www",
+    "stop":"forever stop bin/www",
+    "build":"gulp build",
+    "test": "node bin/www"
   },
   "author": "",
   "license": "ISC"
