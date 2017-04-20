@@ -70,10 +70,10 @@ gulp.task('img', function() {
 });
 
 
-// 浏览器同步，用7000端口去代理Express的3008端口
+// 浏览器同步，用7000端口去代理Express的3000端口
 gulp.task('browser-sync', ['nodemon'], function() {
   browserSync.init(null, {
-    proxy: "http://localhost:3008",
+    proxy: "http://localhost:3000",
         files: ["dist/views/*.*","dist/css/*.*","dist/js/*.*","dist/img/*.*"],
         browser: "google chrome",
         port: 7000

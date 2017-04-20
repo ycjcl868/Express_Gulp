@@ -1,6 +1,6 @@
-dist/lib/*
+dist/
 node_modules
 .idea
 .idea/*
-
-
+yarn.lock
+.vscode

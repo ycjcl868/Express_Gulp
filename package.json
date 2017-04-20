@@ -1,7 +1,7 @@
 {
-  "name": "voteapp",
+  "name": "express-gulp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express_Gulp",
   "main": "app.js",
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -10,6 +10,8 @@
     "ejs": "~2.3.3",
     "express": "~4.13.1",
     "forever": "^0.15.3",
+    "gulp-base64": "^0.1.3",
+    "gulp-jshint": "^2.0.4",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
   },
@@ -30,11 +32,9 @@
     "gulp-watch": "^4.3.11"
   },
   "scripts": {
-    "start":"forever start bin/www",
-    "restart":"forever restart bin/www",
-    "stop":"forever stop bin/www",
-    "build":"gulp build",
-    "test": "node bin/www"
+    "start": "NODE_ENV=production node bin/www",
+    "dev": "gulp",
+    "build": "gulp build"
   },
   "author": "",
   "license": "ISC"
