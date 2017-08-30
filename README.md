@@ -6,6 +6,7 @@
 我使用`Express`+`Ejs`+`Less`开发，想开发时对所有资源进行`压缩`并`同步`到浏览器端，Google搜索一遍，都不是太符合我的项目要求。于是看着`Gulp文档`结合`npmjs.com`终于折腾完毕。
 
 
+
 ### Quickstart
 
 #### 安装
@@ -13,7 +14,7 @@
 clone项目
 ```bash
 $ git clone https://github.com/ycjcl868/Express_Gulp.git
-```  
+```
 
 切换目录，安装依赖
 ```bash
@@ -26,15 +27,15 @@ $ cd Express_Gulp && npm install
 $ npm run dev
 ```
 
-构建项目，将文件压缩、打包、编译，输出 `dist` 目录  
+构建项目，将文件压缩、打包、编译，输出 `dist` 目录
 ```bash
 $ npm run build
-``` 
+```
 
-生产模式，不具备热更新，运行在 `3000` 端口  
+生产模式，不具备热更新，运行在 `3000` 端口
 ```bash
 $ npm run start
-```` 
+````
 
 ### 配置
 下面说下我的配置方法：
@@ -54,10 +55,10 @@ $ npm run start
 ├── .bowerrc # bower前端安装库
 ├── gulpfile.js  # Gulp配置文件
 ├── package.json
-├── public       # 开发目录 
+├── public       # 开发目录
 │   ├── img
 │   ├── js
-│   └── less     
+│   └── less
 ├── routes
 │   ├── index.js
 │   └── users.js
